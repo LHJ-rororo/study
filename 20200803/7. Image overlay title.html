@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image overlay title</title>
+    <style type="text/css">
+        .container{
+        width: 50%;
+        position: relative;
+    }
+    .image{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .text{
+        color: #fff;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform : translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container:hover .overlay{
+        opacity: 0.8;
+    }
+    
+    .overlay{
+        position: absolute;
+        top: 80%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        overflow: hidden;
+        width:31.5%;
+        height: 20%;
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="img">
+        <img src="images/sample-03.jpg" alt="">
+    </div>
+    <div class="overlay">
+        <div class="text">My Name is John</div>
+    </div>
+</div>
+</body>
+</html>

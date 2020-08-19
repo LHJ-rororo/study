@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샘플 수업</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .smpale-box{
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+    /* 이미지를 감싼 디브에 원하는 만큼의 위스값을 조정한다. 위스값이 클 경우 이미지 공간이 남게되는데 이는 하단의 img 위스값으로 조정한다 */
+    .smpale-box div{
+        float: left;
+        width: 25%;
+        cursor: pointer;
+        /* 클릭해야 할 이미지의 경우 이미지에 오버했을 때 마우스의 모양이 손가락 모양으로 변해야 사람들은 클릭할 수 있는 이미지임을 인식한다. cursor 태그로 커서의 이미지를 변경한다. */
+    }
+    img{
+        width: 100%;
+    }
+    /* img 위스 100%로 할 경우 샘플박스에 선택한 영역만큼 이미지를 채운다. 이미지의 크기를 조정해야할 경우 img class를 주어 해당 class에 크기를 줘 이미지를 키우거나 이미지에 직접 크기를 줘서 이미지를 키워야한다 */
+    .sample-img:hover .want-big-01{
+        transform: scale(1.2);
+    }
+    /* 원트빅 이미지에 호버 시 이미지가 크게하는 효과
+    사용법: .부모요소:hover .자식요소{ transform: scale(1.2)}
+    .부모요소를 호버 시 자식요소가 scale(1.2)만큼 transform(변화)한다. */
+
+    .sample-img{
+        overflow: hidden;
+    }
+    /* overflow:hidden 을 주면 이미지는 마우스 호버 시 커지되 이미지가 정해진 구역 밖으로 벗어나면서 커지는 효과를 방지한다. */
+
+    .want-big-01{
+        transition: all 0.3s;
+    }
+    /* transition: all 0.3s 를 주게되면 마우스 호버 시 이미지가 부드럽게 커진다. */
+
+    </style>
+</head>
+<body>
+    <div class="smpale-box">
+        <div class="sample-img">
+            <img src="images/sample-01.jpg" alt="sample-01" class="want-big-01">
+        </div>
+        <!-- sample-01 -->
+        <div class="sample-img">
+            <img src="images/sample-02.jpg" alt="sample-02"class="want-big-01">
+        </div>
+        <!-- sample-02 -->
+        <div class="sample-img">
+            <img src="images/sample-03.jpg" alt="sample-03"class="want-big-01">
+        </div>
+        <!-- sample-03 -->
+        <div class="sample-img">
+            <img src="images/sample-04.jpg" alt="sample-04"class="want-big-01">
+        </div>
+        <!-- sample-04 -->
+    </div>
+</body>
+</html>
