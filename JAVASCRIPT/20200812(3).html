@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트, 홀짝구하기</title>
+</head>
+<body>
+    <h1>사용자에게 숫자를 입력받아 홀수와 짝수를 구분하는 프로그램</h1>
+
+    <script>
+        var input=prompt('숫자를 입력하세요.','숫자');
+        var number=input % 2;
+
+        if(number<1){
+            alert('짝수입니다.');
+        }
+        else{
+            alert('홀수입니다.');
+        }
+        
+    </script>
+</body>
+</html>

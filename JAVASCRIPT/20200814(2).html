@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트,Arrays 교체하기</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <p id="demo"></p>
+
+    <script>
+        var cars= ["Saab", "Volvo", "BMW"];
+        cars[0]="Opel";
+        //위의 서식으로 cars의 0번 항목인 Saab를 Opel로 교체해달라는 명령을 내린다.
+        document.getElementById("demo").innerHTML=cars;
+    </script>
+    <script>
+        var fruits=["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML=fruits.length;
+        //length는 목록의 갯수를 세라는 명령.
+    </script>
+
+    <script>
+        var fruits=["Banana", "Orange", "Apple", "Mango"];
+        var last=fruits [fruits.length-1];
+        // 프루츠 목록의 갯수(4)에서 -1을 해서 숫자 3으로 만들어달라는 명령
+        document.getElementById("demo").innerHTML=last;
+        //현재 목록 숫자 ["Banana(0)", "Orange(1)", "Apple(2)", "Mango(3)" 에서 last 객체를 출력해달라는 명령]
+    </script>
+</body>
+</html>

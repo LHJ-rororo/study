@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        vertical-align: top;
+        border: 0;
+    }
+    #galleryWrap{
+        width: 510px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #galleryWrap img{
+        vertical-align: middle;
+    }
+
+    </style>
+
+    <script type="text/javascript">
+    //<![CDATA[
+        var num= 1;
+        function nextGallery(){
+            num++;
+            if(num>7) num=1;
+            document.getElementById("gallery").src = "images/img" + num + ".jpg";
+            return false
+        }
+
+        function prevGallery(){
+            num--;
+            if(num<1) num=7;
+            document.getElementById("gallery").src = "images/img"+num+".jpg";
+            return false
+        }
+        //]]>
+     </script>
+</head>
+<body>
+    <div id="galleryWrap">
+        <h1>이미지 넘기기</h1>
+        <p>
+            <a href="#prev" onclick="return prevGallery();">
+                <img src="images/arrow-left.png" alt="이전그림">
+            </a>
+
+            <img src="images/img1.jpg" alt="갤러리 그림" id="gallery">
+            <a href="#next" onclick="return nextGallery();">
+                <img src="images/arrow-right.png" alt="다음 그림">
+            </a>
+        </p>
+    </div>
+</body>
+</html>

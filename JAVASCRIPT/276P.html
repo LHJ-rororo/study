@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트, 276P+Math 객체</title>
+</head>
+<body>
+    <script>
+        var maxNum=Math.max(30,80,5);
+        document.write("최대값"+maxNum+"<br>");
+        //math 숫자 데이터를 입력한 상태에서 어떻게 보여지는지
+        var minNum=Math.min(8,10,15);
+        document.write("최소값"+minNum+"<br>");
+        var roundNum=Math.round(3.5);
+        document.write("반올림"+roundNum+"<br>");
+        var ceilNum=Math.ceil(5.1);
+        document.write("소수점올림"+ceilNum+"<br>");
+        var floorNum=Math.floor(10.5);
+        document.write("소수점내림"+floorNum+"<br>");
+        var absNum=Math.abs(-10);
+        document.write("절대값"+absNum+"<br>");
+        // abs -> 무조건 양수로 출력
+        var ranNum=Math.random();
+        document.write("0~1난수:"+ranNum+"<br>");
+
+        var mixNum=Math.floor(Math.random()*10);
+        document.write(mixNum+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+</head>
+<body>
+    <h3>구구단 출력</h3>
+    <hr>
+    <p id="num"></p>
+<script>
+    var n= prompt ("몇 단?" , "1");
+    gugu(n);
+
+    function gugu(n){
+            for(var i=1; i<=9; i++){
+                document.getElementById("num") .innerHTML= (n+"*"+i+"="+n*i+"<br>")
+            }
+        }
+</script>
+</body>
+</html>

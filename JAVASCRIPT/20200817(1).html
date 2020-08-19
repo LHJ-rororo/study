@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트. toString.</title>
+</head>
+<body>
+    <h2>Javascript Arrays</h2>
+    <p id="demo"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML=fruits.toString();
+// 문자값으로 반환하는 태그, toString 
+        document.getElementById("demo").innerHTML=fruits.join(" * ");
+// join 태그는 fruits 목록을 *로 연결한다는 뜻.
+    </script>
+</body>
+</html>

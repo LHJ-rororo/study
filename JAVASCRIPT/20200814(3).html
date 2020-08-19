@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트, for 갯수를 찾아 ul, li 리스트 자동으로 만들기</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var fruits, text, fLen, i;
+        fruits=["Banana", "Orange","Apple","Mango"];
+        fLen=fruits.length;
+
+        text="<ul>";
+        for (i=0; i<fLen; i++){
+            text += "<li>" + fruits[i] +"</li>";
+        }
+        text+="</ul>";
+        document.getElementById("demo").innerHTML=text;
+    </script>
+<!-- forEach 내부반복 -->
+<!-- function 예약을 하는 태그 -->
+</body>
+</html>

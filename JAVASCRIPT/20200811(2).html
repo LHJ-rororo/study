@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트,증가연산자, 감소연산자</title>
+</head>
+<body>
+    <script>
+        var x=10, y=10;
+        document.write((++x-3)+ "<br>");
+        // x의 값을 우선 1 증가시킨 후에 3을 뺌.
+        // ++를 입력 시 1이 증가한다
+        document.write(x+"<br>");
+        // 11
+        // 위에서 ++로 10을 11로 증가시켰기때문에 아래의 값도 11로 나온다
+        document.write((y++-3)+"<br>");
+        // 먼저 y에서 3을 뺀 후에 y의 값을 1 증가시킴.
+        // 영문자보다 나중에++가 붙으면 이 연산은 그대로 y=10 이 적용되어 계산되고 이후 y=10에 +1이 붙는다
+        document.write(y);
+        // 11
+    </script>
+</body>
+</html>

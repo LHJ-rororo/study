@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트,252P 평균구하기</title>
+</head>
+<body>
+    <h1>예제) 사용자에게 국어, 영어, 수학점수를 입력받아 평균을 구한 뒤 수우미양가를 구분하는 프로그램.
+    </h1>
+
+    <script>
+        //1번 방법 (내가 푼 방법)
+        // var 국어 =Number(prompt('국어점수를 입력하세요','점수'));
+        // var 영어 = Number(prompt('영어점수를 입력하세요.','점수'));
+        // var 수학 = Number(prompt('수학점수를 입력하세요.','점수'));
+
+        // var num= (국어+영어+수학)/3;
+
+        // if(num>=80){
+        //     document.write("수")
+        // }else if(num>=60){
+        //     document.write("우")
+        // }else if(num>=40){
+        //     document.write("미")
+        // }else if(num>=20){
+        //     document.write("양")
+        // }else{
+        //     document.write("가")
+        // }
+            //정답
+        var 국어 =Number(prompt('국어점수를 입력하세요','점수'));
+        var 영어 = Number(prompt('영어점수를 입력하세요.','점수'));
+        var 수학 = Number(prompt('수학점수를 입력하세요.','점수'));
+        var avg=0;
+        avg=(국어+영어+수학)/3;
+        if(80<=avg && avg <100){
+            alert('수');
+        }
+        else if (60<= avg && avg<80){
+            alert('우');
+        }
+        else if (40<=avg && avg<60){
+            alert('미');
+        }
+        else if (20<=avg && avg<40){
+            alert ('양')
+        }
+        else{
+            alert('가')
+        }
+
+    </script>
+</body>
+</html>

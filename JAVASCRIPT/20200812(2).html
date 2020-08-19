@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 시작과 동시에 질문하는 창이 뜬다. -->
+    <h1> 예제) 사용자에게 숫자를 입력받아 양수, 0, 음수를 구분하는 if 조건문</h1>
+    <!-- alert=경고창 prompt=질문창 -->
+    <script>
+        var number=Number(prompt('숫자를입력하세요','숫자'));
+
+        if (number<0) {
+            alert ('음수입니다.');
+        }
+        else if(number>0){
+            alert ('양수입니다.');
+        }
+        else{
+            alert('0입니다.');
+        }
+    </script>
+</body>
+</html>
