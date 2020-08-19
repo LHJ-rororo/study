@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style type="text/css">
+    .width-50{
+        width: 49%;
+        height: 300px;
+        margin: 0.5%;
+        background-color: gold;
+        box-shadow: 10px 5px 5px #000;
+    }
+    .flex{
+        display: flex;
+    }
+    .width-33{
+            width: 33%;
+            height: 300px;
+            background-color: gray;
+            margin: 0.1%;}
+
+    @media(max-width: 767px){
+        .width-50{
+            width: 99%;
+        }
+        .flex{
+            flex-direction: column;
+        }
+        .width-33{
+            width: 100%;
+        }
+    }
+     /* 미디어가 맥스-위스값에 도달했을 때 클래스 위스-50은 위스99%로 바뀌고 클래스 플랙스는 플랙스-디랙션:칼럼으로 변동하라는 명령값 */
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="width-50"></div>
+        <div class="width-50"></div>
+    </div>
+    <div class="flex">
+        <div class="width-33"></div>
+        <div class="width-33"></div>
+        <div class="width-33"></div>
+    </div>
+</body>
+</html>

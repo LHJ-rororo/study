@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding:0;
+        }
+        header{
+            width:100%; background:blue;
+            height: 30px;
+        }
+        .cotnent{
+            width:100%;
+            height: 300px;
+            background:skyblue;
+        }
+        .bg1{
+            width:33.33%;
+            background:gold;
+            height: 300px;
+            float: left;
+        }
+        .bg2{
+            width:33.33%;
+            background:plum;
+            height: 300px;
+            float: left;
+        }
+        .bg3{
+            width:33.33%;
+            background:hotpink;
+            height: 300px;
+            float: left;
+        }
+        .bg4{
+            clear: both;
+            width:100%;
+            background:skyblue;
+            height: 300px;
+        }
+        footer{
+            width:100%;
+            height: 200px;
+            background:#ccc;
+            clear: both;
+        }
+        @media(max-width:767px){
+        .bg1{
+            width:50%;
+            float: left;
+        }
+        .bg2{
+            width:50%;
+            float: left;
+        }
+        .bg3{
+            float: left;
+            width:50%;
+
+        }
+        .bg4{
+            width:50%;
+            float: left;
+            clear:initial;
+
+        }
+
+        }
+
+        @media(max-width:580px){
+            .bg1{
+            width:100%;
+            clear: both;
+        }
+        .bg2{
+            width:100%;
+            clear: both;
+        }
+        .bg3{
+            width:100%;
+            clear: both;
+
+        }
+        .bg4{
+            width:100%;
+            clear: both;
+
+        }
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>header</h1>
+</header>
+<section>
+    <div class="cotnent"></div>
+    <div class="content-box">
+        <div class="con-1 bg1"></div>
+        <div class="con-1 bg2"></div>
+        <div class="con-1 bg3"></div>
+        <div class="con-1 bg4"></div>
+    </div>
+</section>
+<footer>
+
+</footer>
+</body>
+</html>

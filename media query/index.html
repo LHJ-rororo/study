@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style type="text/css">
+    @media(max-width: 767px){
+        p{
+            background: red;
+        }
+    }
+    @media(max-width: 540px){
+        p{
+            background: yellow;
+        }
+    }
+    /* @media에서 사이즈가 max-width: 사이즈px 에 도달했을 때 p{백그라운드를 옐로우로 바꾼다} */
+    
+    .layout-2>div{
+        width: 50%;
+        height: 300px;
+    }
+    .box1{
+        background: yellowgreen;
+    }
+    .box2{
+        background: red;
+    }
+    .layout-3>div{
+        width: 33%;
+        height: 300px;
+    }
+    .box3{
+        background: bisque;
+    }
+    .box4{
+        background: blue;
+    }
+    .box5{
+        background: lightcoral;
+    }
+
+    .box6{
+        background: cadetblue;
+    }
+    .box7{
+        background: darkblue;
+    }
+    .box8{
+        background: crimson;
+    }
+    .box9{
+        background: darkgreen;
+    }
+    /* 아래부터 신기능 */
+     .layout-2{
+         display: flex;
+     }
+     .layout-3{
+         display: flex;
+     }
+     .layout-4{
+         display: flex;
+     }
+    /* 1. 부모에게 디스플레이:플랙스를 써줘야한다
+        2. 디스플레이 플랙스 사용 시 자식요소의 박스들이 옆으로 붙어 나란히 정렬된다 */
+        .layout-4-sub{
+            display: flex;
+        }
+        /* 크기를 줄일 경우 가장큰박스> 내리고 싶은 박스만큼 부모박스 생성> 컨텐츠박스들 생성 후 모든 부모박스에 디스플레이:플랙스를 넣어준다. */
+        .layout-4>div{
+        width: 50%;
+        height: 300px;
+    }
+        .layout-4-sub>div{
+            width: 50%;
+        }
+/* 미디어박스 설명 */
+    @media(max-width: 767px){
+        .layout-4{
+            flex-direction: column;
+        }
+        .layout-4>div{
+            width: 100%;
+            height: 300px;
+        }
+    }
+/* 미디어의 사이즈가 767px로 줄어들 경우 class:layout-4는 flex-direction:column 으로 변동하여 컨텐츠 박스를 아래로 내리게 설정하고 layout-4의 div들 사이즈를 위스100%로 지정하여 내려가는 즉시 컨테이너의 사이즈가 늘어나 식별성을 높이게 한다. */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="media">
+            <h1>미디어쿼리의 이해</h1>
+            <p>
+                <b>CSS의 미디어쿼리(media query)</b>를 사용하면 화면의 해상도에 따라서 페이지를 다르게 보여줄 수 있습니다.
+                flex 레이아웃과 더불어 미디어 쿼리는 반응형 웹을 손쉽게 만들기 위해 반드시 필요한 것이므로 중요한 주제입니다. (참고 : 인터넷 익스플로어 8 이전 버전은 미디어쿼리를 제대로 지원하지 않는다.)
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="layout-2">
+            <div class="layout-50 box1"></div>
+            <div class="layout-50 box2"></div>
+        </div>
+    <div class="layout-3">
+            <div class="layout-33 box3"></div>
+            <div class="layout-33 box4"></div>
+            <div class="layout-33 box5"></div>
+    </div>
+        <div class="layout-4">
+            <div class="layout-4-sub">
+                <div class="layout-25 box6"></div>
+                <div class="layout-25 box7"></div>
+            </div>
+            <div class="layout-4-sub">
+                <div class="layout-25 box8"></div>
+                <div class="layout-25 box9"></div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
