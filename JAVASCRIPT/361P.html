@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 핸들러</title>
+    <script
+    src="https://code.jquery.com/jquery-1.8.1.min.js">
+  </script>
+  <style>
+      *{margin: 0;
+      padding: 0;}
+      body{
+          font: 12px/1.5 "굴림";margin: 10px;
+      }
+      h2{margin-top: 30px;}
+      a{color: #333;}
+      #textZone{
+          width: 700px;
+      }
+      #listWrap{
+          background: #cfcfcf;
+          width: 110px;
+          padding: 10px;
+      }
+      .list1{
+          display: none;
+      }
+  </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>이벤트 연습</h1>
+        <p id="textZone">웹 브라우저에서 버튼을 클릭한다거나 mouse를 움직이거나 하는 모든 행위를 '이벤트'라고 합니다. 그리고 이벤트 발생 시 함수의 실행문이 수행되도록 이벤트를 지정하는 것을 이벤트 핸들러라고 합니다.</p>
+        <h2>click 메서드</h2>
+        <p><button id="btn1">click</button></p>
+        <h2>mouseover 메서드</h2>
+        <p><button id="btn2">mouseover</button></p>
+        <h2>bind 메서드</h2>
+        <p><button id="btn3">bind</button></p>
+        <h2>mouseleave 메서드</h2>
+        <div id="listWrap">
+            <h3>관련 사이트</h3>
+            <ul class="list1">
+                <li><a href="#">list1</a></li>
+                <li><a href="#">list2</a></li>
+                <li><a href="#">list3</a></li>
+                <li><a href="#">list3</a></li>
+            </ul>
+        </div>
+        <h2>toggle 메서드</h2>
+        <button id="btn4">toggle</button>
+        <p>누를 때마다 실행 함수를 차례대로 번갈아 가면서 실행합니다. <br> 위의 toggle 버튼을 계속 클릭해보세요!</p>
+        <h2>hover 메서드</h2>
+        <h3><a href="#" class="hover">hover</a></h3>
+    </div>
+
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                $("#textZone").css("color", "blue")
+                //해설: "#btn1"버튼을 .클릭 시 ("#textZone"에 있는 글자.css "색깔"을, "블루"로 변경해주세요.★
+            });
+            $("#btn2").mouseover(function(){
+                $("#textZone").css("background-color","yellow")
+                //해설: "#btn2"버튼에 .마우스오버(마우스를 가져다 대자마자) 시 "#textZone"에 있는 글자.css "백그라운드-색깔"을 "옐로우"로 변경해주세요.★
+            });
+            $("#btn2").focus(function(){
+                $("#textZone").css("background-color","blue")
+            }); //마우스를 가져다 대고 왼쪽버튼을 누르자마자 적용됨.
+            
+            $("#btn3").bind("mousecover focus",function(){
+                $("#textZone").css("color", "green").css("font-weight", "bold")
+            });
+                    //서브 메뉴 만들 때 유용
+                    $("#listWrap").mouseenter(function(){
+                        $(".list1").css("display", "block")
+                    });
+                    //"#listWrap"라는 버튼에 mouseenter(마우스가 버튼영역에 속했을 때) ".list1" 목록이 나타난다
+                    $("#listWrap").mouseleave(function(){
+                        $(".list1").css("display", "none")
+                    });
+                    //"#listWrap"라는 버튼에 mouseleave(마우스가 버튼영역을 벗어났을 때) ".list1" 목록이 사라진다
+                    //서브 메뉴 만들 때 유용
+
+
+                    //하위 토글은 1.8.1 버전에서만 작동된다.
+                    $("#btn4").toggle(function(){
+                        $(this).next().css("background-color", "red"); //함수1
+                    }, function(){
+                        $(this).next().css("background-color","orange"); //함수2
+                    }, function(){
+                        $(this).next().css("background-color","yellow"); //함수3
+                    },
+                    function(){
+                        $(this).next().css("background-color","white"); //함수4
+                    })
+                    //토글은 클릭했을 때 변경되는 것, this는 지정된 #btn4에서 가장 가까운 하위 속성자를 변경시크는 것
+        });
+
+
+        $(".hover").hover(function(){
+            $(this).css("color", "aqua"); //함수1 
+        },function(){
+            $(this).css("color", "red"); //함수2
+        });
+    </script>
+
+
+</body>
+</html>
