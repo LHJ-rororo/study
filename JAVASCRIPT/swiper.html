@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Slider</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- swiper -->
+
+<link rel="stylesheet" href="css/swiper.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<!-- bxslider -->
+
+
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg1"><h1>Slide 1</h1></div>
+          <div class="swiper-slide bg2"><h1>Slide 2</h1></div>
+          <div class="swiper-slide bg3"><h1>Slide 3</h1></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <h1>BX slider</h1>
+      <div class="bx-slider">
+        <div class="bx-slide bg4"><h1>Slide 4</h1></div>
+        <div class="bx-slide bg5"><h1>Slide 5</h1></div>
+        <div class="bx-slide bg6"><h1>Slide 6</h1></div>
+      </div>
+
+
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+
+    $(document).ready(function(){
+      $('.bx-slider').bxSlider();
+    });
+
+      </script>
+</body>
+</html>
