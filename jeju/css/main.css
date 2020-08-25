@@ -1,0 +1,486 @@
+/* 리셋css */
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'NanumSquare', sans-serif !important;
+} 
+/* 웹폰트 설정 */
+ul,ol{
+    list-style: none;
+}
+/* 리스트스타일 빼기 */
+a{
+    text-decoration: none;
+    /* a태그 밑줄빼기 */
+    color:inherit
+
+}
+/* 리셋css */
+
+.gnb>ul{
+    float: left;
+    padding-left: 80px;
+}
+/* 제주용암수란?쪽 메뉴 정렬 및 패딩처리 */
+
+.gnb>ul>li{
+    float: left;
+    padding-top: 6px;
+    color: #111111;
+    font-weight: 500;
+}
+/* 제주용암수란?쪽 메뉴 안의 각각의 속성 부여 */
+
+.gnb>ul>li+li{
+    padding-left: 40px !important;
+}
+/* li+li로 설정 시 가장 앞의 li(제주용암수란?)를 제외한 뒤따르는 2개(일반주문,정기배송)에 대한 값만 설정된다 */
+/* 제주용암수란?쪽 메뉴 안의 문단끼리의 간격 */
+
+#gnb{
+    float: left;
+    padding: 26px 0 0 40px;
+}
+/* nav아이디의 클라스 gnb에 대한 정렬 및 패딩값, 이 값을 설정해야 로고 및 제주용암수부분 메뉴가 원하는 위치로 이동한다 */
+#gnb>ul{
+    padding-left: 80px;
+}
+
+#gnb>.top-logo, #gnb>ul, #gnb>ul>li{
+    float: left;
+}
+/* id gnb-로고 이미지와 ul, ul안의 li를 순차적으로 정렬하는 값 */
+#header-area .util{
+    float: right;
+    padding: 24px 40px 0;
+}
+/* 헤더-에어리어 안의 클래스 언틸에 대한 정렬 및 위치조정 */
+
+
+#header-area .util>ul, #header-area .util>ul>li{
+    float: left;
+}
+/* 헤더-에어리어 안의 클래스 언틸>ul 과 헤더-에어리어 안의 클래스 언틸>ul>li 의 정렬설정, 이 값을 주지않으면 애들이 일반 리스트처럼 아래로 나열됨. */
+.util>ul>li{
+    padding: 0 12px;
+}
+/* 헤더-에어리어 안의 클래스 언틸>ul>li 들끼리의 간격을 패딩으로 조절 (양옆 12px) */
+#header-area .util>ul>li a {
+    display: block;
+    font-size: 14px;
+    color: #999999;
+    line-height: 32px;
+}
+/* 헤더-에어리어 안의 클래스 언틸>ul>li>a 태그에 대한 속성 지정, 디스플레이 블록으로 각각 블록으로 잡아둔 후 폰트 사이즈설정> 컬러지정> 줄높이지정(32px)로 설정하여 위치를 조정해준다 */
+
+                            /* 레이아웃 끝 */
+
+/* btn  */
+.btn.btn-primary {
+    position: relative;
+    background-color: #00aa91;
+    border-color: #00aa91;
+    color: #fff;
+}
+/* 버튼에 대한 이미지, 폰트컬러값 조정 */
+
+.btn{
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+}
+/* 버튼 크기를 패딩으로 조정 */
+
+.btn.sm{
+    height: 32px;
+    line-height: 30px;
+    font-weight: 400;
+    border-radius: 4px !important;
+}
+/* btn */
+
+.txt-primary{
+    color: #00aa91 !important;
+    font-weight: bold;
+}
+
+.banner{
+    clear: both;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#header-area{
+    height: 70px;
+}
+.header-inner{
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    background: #fff;
+}
+
+/* notice-wrap */
+.notice-wrap{
+    padding-top: 24px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.conts-area{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+.notice-wrap .tit{
+    float: left;
+    width: 100px;
+    font-size: 16px;
+    color: #000000;
+}
+.notice-wrap a{
+    float: right;
+    width: 860px;
+}
+
+/* regulat-order-warp */
+
+.regular-order-wrap{
+    clear: both;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.title{
+    font-size: 32px;
+    color: #111111;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -.5px;
+
+}
+/* 돈과 시간을 아껴주는 정기배송 부분▲ */
+
+.detail{
+    margin-top: 60px;
+}
+
+.regular-order-wrap .detail>li:first-child{
+    background-image: url(../images/bg_regular_01.png);
+}
+.regular-order-wrap .detail>li:nth-child(2){
+    background-image: url(../images/bg_regular_02.png);
+}
+.regular-order-wrap .detail>li:last-child{
+    background-image: url(../images/bg_regular_03.png);
+}
+
+.regular-order-wrap .detail >li{
+    float: left;
+    width: 320px;
+    padding-top: 234px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+}
+
+.regular-order-wrap .btn-sec{
+    padding-top: 60px;
+}
+
+.btn.lg{
+    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.btn{
+    display: inline-block;
+}
+
+.btn-sec{
+    clear: both;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.introduction{
+    width: 100%;
+    height: 720px;
+    background: url(../images/bg_introduction.png) no-repeat 50% 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.introduction .conts-area{
+    padding-top: 80px;
+    position: relative;
+}
+.title{
+    font-size: 32px;
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -.5px;
+}
+
+.point .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 171, 107, 0.12);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    animation: record-lg 1.5s ease-in-out infinite;
+}
+
+@keyframes record-lg{
+    0%{
+        opacity:0;
+        transform: scale(.5);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes dot-effec{
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }
+}
+
+.point .dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    background-color: #00ab6a;
+    border-radius: 50%;
+    animation: dot-effec 1.5s ease-in-out infinite;
+}
+
+.point .bg::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color: rgba(0, 171, 107, 0.2);
+    -webkit-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.introduction .point.point-1{
+    top: 336px;
+    left: 521px;
+}
+.introduction .point.point-2{
+    top: 386px;
+    left: 440px;
+}
+.introduction .point.point-3{
+    top: 535px;
+    left: 460px;
+}
+.introduction .point.point-4{
+    top: 577px;
+    left: 514px;
+}
+.introduction .point{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+.link-bn{
+    margin-top: -60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.link-bn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 32px;
+    padding-left: 32px;
+}
+.link-bn ul>li:first-child{
+    background: url(../images/bn_order.png) no-repeat 292px 100%;
+}
+.link-bn ul>li:last-child{
+    float: right;
+    background: url(../images/bn_large_order.png) no-repeat 311px 100%;
+}
+
+.link-bn li{
+    float: left;
+    width: 460px;
+    height: 168px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+}
+
+.link-bn{
+    margin-top: 40px;
+    padding-bottom: 80px;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+}
+
+.conts-area{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+.app-down{
+    margin-top: 200px;
+    height: 400px;
+    padding-top: 80px;
+    background: url(../images/bg_down.jpg) no-repeat 50% 0;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+.app-down .btn-sec{
+    margin-top: 60px;
+}
+.btn-sec{
+    text-align: center;
+}
+    /*  */
+    #footer {
+        background-color: #111;
+    }
+    #footer .util li {
+        position: relative;
+        float: left;
+        padding: 0 12px 0 13px;
+    }
+
+    #footer .util li + li:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: "";
+        width: 1px;
+        height: 12px;
+        margin-top: -6px;
+        background-color: rgba(255,255,255,.2);
+    }
+
+    #footer .util li:first-child {
+        padding-left: 0;
+    }
+    #footer .util li a {
+        font-size: 14px;
+        color: #fff;
+    }
+    #footer > .conts-area {
+        padding: 32px 0 52px;
+        background-color: #111;
+    }
+    #footer .util:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    #footer .company-info {
+        margin-top: 15px;
+    }
+    .copyright {
+        margin-top: 24px;
+        font-size: 14px;
+        color: #666666;
+    }
+
+
+#footer .company-info li {
+    font-size: 14px;
+    color: #999999;
+}
+
+/* 배너 이미지들 */
+.bg1{
+    width: 100%;
+    height: 600px !important;
+    background: url(../images/bg_visual_01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg2{
+    width: 100%;
+    height: 600px !important;
+    background: url(../images/bg_visual_02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg3{
+    width: 100%;
+    height: 600px !important;
+    background: url(../images/bg_visual_03_gfc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg4{
+    width: 100%;
+    height: 600px !important;
+    background: url(../images/bg_visual_04.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 배너 슬라이드 화살표 위치 조정 */
+.main-btn-next{
+    position: absolute;
+    top: auto !important;
+    bottom: 20% !important;
+    left: 20% !important;
+}
+
+.main-btn-prev{
+    position: absolute;
+    top: auto !important;
+    bottom: 20% !important;
+    left: 15% !important;
+}
+
+.pagein{
+    position: absolute;
+    bottom: 22% !important;
+    left: 17.5% !important;
+    text-align: left !important;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tap-content</title>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- jquery 3.2.1 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="css/tab-css.css">
+</head>
+<body>
+    <div class="tap-content">
+        <div class="tab">
+            <ul>
+                <li class="tab01"><a href="#">tap-01</a></li>
+                <li class="tab02"><a href="#">tap-02</a></li>
+                <li class="tab03"><a href="#">tap-03</a></li>
+                <li class="tab04"><a href="#">tap-04</a></li>
+            </ul>
+        </div>
+        <div class="tab-bg tab01-contetnt">
+            <h1>content01</h1>
+        </div>
+        <div class="tab-bg tab02-contetnt">
+            <h1>content02</h1>
+        </div>
+        <div class="tab-bg tab03-contetnt">
+            <h1>content03</h1>
+        </div>
+        <div class="tab-bg tab04-contetnt">
+            <h1>content04</h1>
+        </div>
+    </div>
+    <!-- 탭바 제이쿼리 스크립트 기동 ↓ -->
+    <script>
+        $(function(){
+            $('.tab01').click(function(){
+                $('.tab01-contetnt').css("display","block");
+                $(".tab02-contetnt").css("display",'none');
+                $(".tab03-contetnt").css("display",'none');
+                $(".tab04-contetnt").css("display",'none');
+            });
+
+            $('.tab02').click(function(){
+                $('.tab02-contetnt').css("display","block");
+                $(".tab01-contetnt").css("display",'none');
+                $(".tab03-contetnt").css("display",'none');
+                $(".tab04-contetnt").css("display",'none');
+            });
+
+            $('.tab03').click(function(){
+                $('.tab03-contetnt').css("display","block");
+                $(".tab01-contetnt").css("display",'none');
+                $(".tab02-contetnt").css("display",'none');
+                $(".tab04-contetnt").css("display",'none');
+            });
+
+            $('.tab04').click(function(){
+                $('.tab04-contetnt').css("display","block");
+                $(".tab01-contetnt").css("display",'none');
+                $(".tab02-contetnt").css("display",'none');
+                $(".tab03-contetnt").css("display",'none');
+            });
+            //해설: $(function(){ $(.tab01) .click(function(){}) 탭01클래스를 눌렀을 때 > $('클래스 탭01컨텐츠').css("디스플레이". ("블록하라"); $('나머지 클래스 컨텐츠').css('디스플레이', '사라져라');*4) });
+        });
+    </script>
+</body>
+</html>

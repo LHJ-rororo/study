@@ -1,0 +1,37 @@
+.tap-content{
+    width: 1280px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.tab ul{
+    display: flex;
+}
+
+.tab{
+    background: #cbcbcb;
+}
+.tab li{
+    padding: 10px 10px;
+}
+
+.tab-bg{
+    border: 1px solid #1f1f1f;
+    box-sizing: border-box;
+}
+
+.tab02-contetnt{
+    display: none;
+}
+.tab03-contetnt{
+    display: none;
+}
+
+.tab04-contetnt{
+    display: none;
+}
