@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- jquery 3.2.1 -->
+    <link rel="stylesheet" href="css/Vertical-Tabs.css">
+</head>
+<body>
+    <div class="tap-content">
+        <div class="tab">
+            <ul>
+                <li class="tab1"><a href="#">서울</a></li>
+                <li class="tab2"><a href="#">부산</a></li>
+                <li class="tab3"><a href="#">광주</a></li>
+            </ul>
+        </div>
+        <div class="tab-bg tab01-content">
+            <h3>서울</h3>
+            <p>서울은 대한민국의 수도이다.</p>
+        </div>
+        <div class="tab-bg tab02-content">
+            <h3>부산</h3>
+            <p>부산은 유명한 관광지이다.</p>
+        </div>
+        <div class="tab-bg tab03-content">
+            <h3>광주</h3>
+            <p>광주는 유명한 관광지이다.</p>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $('.tab1').click(function(){
+                $(".tab01-content").css("display","block");
+                $('.tab02-content').css("display",'none');
+                $('.tab03-content').css("display",'none');
+                $('.tab1').css('background','gray');
+                $('.tab2').css('background','inherit');
+                $('.tab3').css('background','inherit');
+            });
+            $('.tab2').click(function(){
+                $(".tab02-content").css("display","block");
+                $('.tab01-content').css("display",'none');
+                $('.tab03-content').css("display",'none');
+                $('.tab2').css('background','gray');
+                $('.tab1').css('background','inherit');
+                $('.tab3').css('background','inherit');
+            });
+
+            $('.tab3').click(function(){
+                $(".tab03-content").css("display","block");
+                $('.tab01-content').css("display","none");
+                $('.tab02-content').css("display","none");
+                $('.tab3').css('background','gray');
+                $('.tab1').css('background','inherit');
+                $('.tab2').css('background','inherit');
+            });
+            
+        });
+    </script>
+</body>
+</html>
