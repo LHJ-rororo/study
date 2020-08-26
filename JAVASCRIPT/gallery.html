@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery-Modal</title>
+<!-- jquery-3.2.1 code -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<!-- css 플러그인은 헤드와 헤드사이에 집어넣어야한다. -->
+
+<style>
+
+  .modal-img{
+    max-width: 100% !important;
+  }
+
+</style>
+
+</head>
+<body>
+  <!-- 모달은 클래스명은 공통으로 적용되나 id 값과 내용은 달라야한다 -->
+    <!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal modal-img">
+    <img src="images/img2.jpg" alt="클릭 후 이미지">
+    <a href="#" rel="modal:close">Close</a>
+    <!-- ↑ 클로즈 버튼 (필요없으면 지울 수 있음)  -->
+  </div>
+  
+  <!-- Link to open the modal -->
+  <p><a href="#ex1" rel="modal:open">
+    <img src="images/img1.jpg" alt="클릭 전 이미지">
+  </a></p>
+</body>
+</html>
