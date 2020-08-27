@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- jquery 3.2.1 -->
+
+    <style>
+        .test{
+            background-color: yellow;
+        }
+
+    </style>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction(){
+            if (document.body.scrollTop > 50 || document. documentElement.scrollTop >50) {
+                document.getElementById("myP").className="test";
+            } else {
+                document.getElementById("myP").className = "";
+            }
+        }
+    </script>
+</head>
+<body style="height: 1500px">
+    <p>Scroll down this page</p>
+
+    <p id="myP" style="position:fixed">
+    When you have scrolled 50 pixels from the top of this page, add the class "test" (yellow background color) to this paragraph. scroll up again to remove the class.
+    </p>
+    
+</body>
+</html>

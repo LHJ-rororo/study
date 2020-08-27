@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아래로 내리기 전 까지는 버튼이 안보이다가 내리면 보이는 버튼 클릭하면 위로 부드럽게 이동하기</title>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- jquery 3.2.1 -->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if( $ ( this ).scrollTop() > 200){
+                    $('.top').fadeIn();
+                }else{
+                    $('.top').fadeOut();
+                }
+            });
+            $('.top').click(function(){
+                $('html,body').animate({scrollTop:0},400);
+                return false;
+            });
+        });
+    </script>
+    <style>
+        div{
+            margin: auto;
+            width: 500px;
+            height: 2000px;
+            border: 1px solid #bcbcbc;
+        }
+        .top{
+            position: fixed;
+            left: 50%;
+            bottom: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <a href="#" class="top">Top</a>
+
+
+</body>
+</html>
