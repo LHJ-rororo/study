@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        .helloworld{
+            border-radius: 5px;
+            border: 5px solid silver;
+            display: inline-block;
+            padding: 20px;
+        }
+        .helloworld.on{
+            background: yellow;
+            border-color: red;
+            box-shadow: 0 0 10px red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="helloWorld()">버튼을 연타해 보세요 !! </button> <br><br>
+    <div class="helloworld"></div>
+
+    <script>
+        function helloWorld(){
+            $('.helloworld:not(:animated)').addClass('on',200).append('Hello World<br>').removeClass('on',100);
+        }
+    </script>
+
+</body>
+</html>
