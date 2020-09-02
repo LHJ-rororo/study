@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+.name{
+    color: blue;
+}
+
+.tag-select p {
+    color: red;
+}
+#coffee{
+    background: greenyellow;
+}
+.coffee{
+    background: violet;
+}
+
+.smart>li:first-child{
+    color: brown;
+}
+
+.smart>li:last-child{
+    color: burlywood;
+}
+
+/* 2020.0902_CSS(2) */
+
+#container{
+    width: 900px;
+}
+h1{
+    color: blue;
+}
+h1+p > span{
+    color: red;
+}
+/* 2. h1 다음 p태그가 있는 조건에 해당되었을 때 거기에 있는 span 에 효과를 적용시킨다 */
+
+
+
+/* 3. 가상선택자 
+  :last-child
+  :first-child
+  :nth-child()
+  ::before
+    ::after
+    ::hover
+  */
+
+  .navi li{
+      transition: all 0.4s;
+  }
+  /* 부드럽게 효과를 적용하는 것, 호버 전에 넣는다. */
+
+  .navi li:hover{
+      background: red;
+      color: #fff;
+  }
+
+  .navi li::after{
+      content: "box";
+  }
+ /* .navi 의 모든 리스트의 뒤에 "박스" 라는 문구를 추가한다.  */
+
+
+ /* .text-box{
+     border: 1px solid #ddd;
+ } */
+
+ .text-box tr:nth-child(2n){
+     background: #ddd;
+ }
+
+
+
+ .letter{
+     letter-spacing: 10px;
+ }

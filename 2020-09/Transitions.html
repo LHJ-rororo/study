@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 222P</title>
+</head>
+<body>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    body{
+        font: 20px "Arial"; margin: 20px;
+    }
+    h1,ul{
+        padding: 10px;
+    }
+    .menu li a{
+        display: block;
+        width: 300px;
+        height: 20px;
+        padding: 10px;
+        margin-bottom: 2px;
+        background: #abc;
+        text-indent: 10px;
+        transition: all 1.2s;
+        -moz-transition: all 1.2s;
+        -webkit-transition: all 1.2s;
+        -o-transition: all 1.2s;
+        color: #123456;
+        text-decoration: none;
+    }
+    .menu li a:hover{
+        width: 450px;
+        letter-spacing: 3px;
+        color: #c00;
+    }
+    
+    </style>
+</body>
+<h1>Moving Mainmenu</h1>
+<ul class="menu">
+    <li><a href="#">COMPANY</a></li>
+    <li><a href="#">PRODUCT</a></li>
+    <li><a href="#">SERVICE</a></li>
+    <li><a href="#">CUSTOMER SUPPORT</a></li>
+    <li><a href="#">COMMUNITY</a></li>
+</ul>
+</html>
