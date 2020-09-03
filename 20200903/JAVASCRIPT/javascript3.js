@@ -57,3 +57,15 @@ switch(number){
         break;
             
 }
+
+// 홀짝 구하는 switch문
+
+var input = prompt('숫자를 입력하세요','숫자');
+var number=input%2;
+if(number<1){
+    alert('짝수입니다.');
+}else{
+    alert('홀수입니다.');
+}
+
+// 홀짝 구하는 if 문
