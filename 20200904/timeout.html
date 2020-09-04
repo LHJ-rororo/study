@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var input=prompt('숫자를 입력하세요', '숫자');
+        // var number=input % 2 ;
+        // if (number<1){
+        //     alert("짝수입니다");
+        // }else{
+        //     alert("홀수입니다");
+        // }
+
+function onlyNumber() {
+if((event.keyCode > 31) && (event.keyCode < 45) || (event.keyCode > 57)) {
+event.returnValue = false;
+}
+}
+
+        var input=Number (prompt('숫자를 입력하세요', '숫자'));
+
+        if(input==0){
+            alert("0입니다");
+        }else if(input>0){
+            alert("양수입니다.");
+        }else if(input<0){
+            alert("음수입니다");
+        }else{
+            alert("잘못된 입력입니다.")
+        }
+    </script>
+</body>
+</html>
