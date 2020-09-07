@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜딩페이지</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- jquery 3.2.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- xe icon -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- main css -->
+</head>
+<body>
+    <section id="section01">
+        <!-- 메뉴시작 -->
+                <nav class="navi">
+                    <ul>
+                        <li><a href="#section01">바나나우유</a></li>
+                        <li><a href="#section02">바나나우유 영상</a></li>
+                        <li><a href="#section03">빙그레 제품</a></li>
+                        <li><a href="#section04">빙그레 이벤트</a></li>
+                        <li><a href="#section05">보도자료</a></li>
+                    </ul>
+                    <span class="xi-bars menu-btn"></span>
+                </nav>
+                <script type="text/javascript">
+                    $(function(){
+                        $(".menu-btn").click(function(){
+                            $(".navi>ul").slideToggle();
+                        });
+                    });
+                </script>
+                <!-- 메뉴 끝 -->
+                <div class="main-content">
+                    <div class="text">
+                        <p><span>Since 1967</span></p>
+                    <h2>맛의 기준을 만들다</h2>
+                    <p>50년의 정직함을 담은 빙그레의 맛으로 또 다른 50년을 만들어 갑니다.</p></div>
+
+                    <div class="main-slider">
+                          <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide main-slider-img01">
+                                    <h1>1974　</h1>
+                                    <p>처음 맛보는 달콤함! 바나나우유의 첫 시작</p>
+                                </div>
+                                <div class="swiper-slide main-slider-img02">
+                                    <h1>1990　</h1>
+                                    <p>든든하게 옆자리를 지키는 따스한 맛</p>
+                                </div>
+                                <div class="swiper-slide main-slider-img03">
+                                    <h1>1991　</h1>
+                                    <p>한층 세련됨으로 무장하여 다시 등장한 바나나우유!</p>
+                                </div>
+                                <div class="swiper-slide main-slider-img04">
+                                    <h1>1998　</h1>
+                                    <p>모두의 기억에 남겨지는 그리운 맛</p>
+                                </div>
+                                <div class="swiper-slide main-slider-img05">
+                                    <h1>2016　</h1>
+                                    <p>미래에도 언제나 함께하는 바나나우유</p>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                    });
+                </script>
+            </section>
+            <section id="section02">
+                <div class="content-title">
+                    <p>Now</p>
+                    <h1>생생한 맛을 즐기다</h1>
+                </div>
+                <div class="content-video">
+                    <div class="contient-video1">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/RII-T8HNOAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/RGbpggsTGZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/vNhvTLPS1-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Y1HH--H853Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1 video-none">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/aj-fT3IrTmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1 video-none">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/cVgrs_8NqHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1 video-none">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/n_wbMAN-IJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="contient-video1 video-none">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/B7_GZzHts4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section03"></section>
+            <section id="section04"></section>
+            <section id="section05"></section>
+        </body>
+        </html>
