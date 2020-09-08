@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>랜딩페이지</title>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
+    
+        <!-- wow css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="wow.min.js">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <!-- jquery 3.2.1 -->
@@ -77,6 +81,8 @@
                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                 <!-- Initialize Swiper -->
                 <script>
+                    new WOW().init();
+
                     var swiper = new Swiper('.swiper-container', {
                     pagination: {
                         el: '.swiper-pagination',
@@ -117,7 +123,43 @@
                 </div>
             </section>
 
-            <section id="section03"></section>
+            <section id="section03">
+                <div class="section-03-title">
+                    <h1>바나나맛우유</h1>
+                    <p>대한민국을 대표하는 No.1 가공우유</p>
+                </div>
+                <div class="content-wide">
+                    <div class="content-area">
+                        <div class="content-03-img wow slideInLeft" data-wow-duration="2s">
+                            <img src="images/img_sect02_banana05.png" alt="바나나우유">
+                        </div>
+                        <div class="content-03-area wow slideInRight">
+                            <p><b>대한민국 대표 가공우유, 빙그레 바나나맛우유</b></p>
+                            <p>1974년에 태어난 빙그레 바나나맛우유는 그 달콤한 맛과 독특한 용기 모양으로 전 국민의 사랑을 받고 있는 가공유 No.1 제품입니다.</p>
+                            <p>단지우유®, 항아리우유®, 뚱바®
+                                라고도 불리는 빙그레 바나나맛우유와 함께 마음까지 가득 채우세요 ~!</p>
+                            <p>* 빙그레 단지우유, 항아리우유, 뚱바는 빙그레의 등록상표입니다.</p>
+                            <div class="area-icon">
+                                <div class="icon-01">
+                                    <img src="images/icon1.png" alt="">
+                                    <p>중량</p>
+                                    <p class="icon-title">240ml</p>
+                                </div>
+                                <div class="icon-02">
+                                    <img src="images/icon2.png" alt="">
+                                    <p>열량</p>
+                                    <p class="icon-title">280kcal</p>
+                                </div>
+                                <div class="icon-03">
+                                    <img src="images/icon3.png" alt="">
+                                    <p>출시년도</p>
+                                    <p class="icon-title">1974.06</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="section04"></section>
             <section id="section05"></section>
         </body>

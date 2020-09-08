@@ -190,6 +190,36 @@ a{
         display: none;
     }
 
+    #section02{
+        background: #ff4b4b;
+        width: 100%;
+        height: auto !important;
+        padding-bottom: 80px !important;
+    }
+    .content-wide{
+        width: 100% !important;
+    }
+    .content-area{
+        flex-wrap: wrap;
+    }
+    .content-03-img{
+        width: 100%;
+    }
+    .content-03-area{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #section03{
+        height: auto;
+        padding-bottom: 80px;
+    }
+    
+    .area-icon{
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* section02 start */
@@ -228,10 +258,58 @@ a{
 /* section02 end */
 
 #section03{
-    background: blueviolet;
+    background: #f4f4f4;
     width: 100%;
     height: 100%;
 }
+.section-03-title{
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Binggrae-bold';
+}
+.section-03-title h1{
+    font-size-adjust: 21px;
+}
+.section-03-title p{
+    font-size-adjust: 21px;
+}
+.content-wide{
+    width: 1280px;
+    margin: 0 auto;
+}
+.content-area{
+    display: flex;
+}
+.content-03-img{
+    width: 50%;
+    text-align: center;
+}
+.content-03-area{
+    width: 50%;
+    color: #666;
+    font-family: 'Binggrae';
+    padding: 39px 0;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    line-height: 30px;
+}
+.area-icon{
+    display: flex;
+    /* justify-content: space-between; */
+    /* 양쪽정렬 */
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #666;
+}
+.area-icon div{
+    margin: 20px 30px;
+    text-align: center;
+}
+.icon-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+/* section 03 end */
 #section04{
     background: #ffec48;
     width: 100%;
