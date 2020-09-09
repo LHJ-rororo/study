@@ -130,37 +130,76 @@
                 </div>
                 <div class="content-wide">
                     <div class="content-area">
-                        <div class="content-03-img wow slideInLeft" data-wow-duration="2s">
+                        <div class="content-03-img wow slideInLeft">
                             <img src="images/img_sect02_banana05.png" alt="바나나우유">
                         </div>
                         <div class="content-03-area wow slideInRight">
                             <p><b>대한민국 대표 가공우유, 빙그레 바나나맛우유</b></p>
                             <p>1974년에 태어난 빙그레 바나나맛우유는 그 달콤한 맛과 독특한 용기 모양으로 전 국민의 사랑을 받고 있는 가공유 No.1 제품입니다.</p>
-                            <p>단지우유®, 항아리우유®, 뚱바®
-                                라고도 불리는 빙그레 바나나맛우유와 함께 마음까지 가득 채우세요 ~!</p>
+                            <p>단지우유®, 항아리우유®, 뚱바®라고도 불리는 빙그레 바나나맛우유와 함께 마음까지 가득 채우세요 ~!</p>
                             <p>* 빙그레 단지우유, 항아리우유, 뚱바는 빙그레의 등록상표입니다.</p>
                             <div class="area-icon">
                                 <div class="icon-01">
                                     <img src="images/icon1.png" alt="">
-                                    <p>중량</p>
+                                    <p class="icon-p">중량</p>
                                     <p class="icon-title">240ml</p>
                                 </div>
                                 <div class="icon-02">
                                     <img src="images/icon2.png" alt="">
-                                    <p>열량</p>
+                                    <p class="icon-p">열량</p>
                                     <p class="icon-title">280kcal</p>
                                 </div>
                                 <div class="icon-03">
                                     <img src="images/icon3.png" alt="">
-                                    <p>출시년도</p>
+                                    <p class="icon-p">출시년도</p>
                                     <p class="icon-title">1974.06</p>
                                 </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            <!-- section 03  -->
+            <section id="section04">
+                <div class="sec04-wrap">
+                    <div class="sec04-title">
+                        <h1>빙그레 이벤트 꿀단지</h1>
+                    </div>
+                    <!-- sec04 title end -->
+                    <div class="sec04-event">
+                        <div class="event-img">
+                            <img src="images/img_sect02_banana05.png" alt="">
+                            <h1>1974</h1>
+                        </div>
+                        <div class="event-title">
+                            <strong class="item_tit">바나나우유는 왜 배불뚝이가 됐을까?</strong>
+                            <p class="item_des">바나나맛우유가 처음 출시될 무렵인 1970년대의
+                                산업화시대에 농촌을 떠나 대도시로 온 고달픈 도시
+                                 생활업자들이 고향을 떠올릴 수 있도록 넉넉한 항아리 모양으로 디자인 되었습니다.
+                                <br>독특한 생기새로 인해 수류탄 우유 등의 별명을
+                                 잔뜩 얻었지만, 우리의 마음을 달래주기 위한
+                                 패키지 디자인이었다는 점을 꼭 기억해주세요.
+                            </p>
+                            <div class="event-pop">
+                                <p>바나나 우유가 태어난 날은 언제일까요?</p>
+                                <input type="text" placeholder="숫자만 입력해주세요">
+                                <button>응모하기</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="section04"></section>
             <section id="section05"></section>
+            <script src="js/wow.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                new WOW().init();
+    
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination'
+                    }
+                });
+            </script>
         </body>
-        </html>
+    </html>

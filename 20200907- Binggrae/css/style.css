@@ -1,7 +1,7 @@
 /* 빙그레 폰트 삽입 */
 
 @font-face {
-    font-family: 'Binggrae-Bold';
+    class="icon-p"
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -157,6 +157,195 @@ a{
     }
 }
 
+
+/* section02 start */
+
+#section02{
+    background: #ff4b4b;
+    width: 100%;
+    height: 100%;
+}
+
+.content-title{
+    text-align: center;
+    padding-top: 80px;
+}
+.content-title p{
+    font-family: 'Binggrae';
+    font-size: 32px;
+    color: #fff;
+}
+.content-title h1{
+    font-family: 'Binggrae-Bold';
+    font-size: 45px;
+    color: #fff;
+}
+.contient-video1{
+    width: 25%;
+    height: 250px;
+}
+.content-video{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+
+/* section02 end */
+
+/* section 03 */
+
+
+#section03{
+    background: #f4f4f4;
+    width: 100%;
+    height: auto;
+    padding-bottom: 15%;
+}
+.section-03-title{
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Binggrae-bold';
+}
+.section-03-title h1{
+    font-size-adjust: 21px;
+}
+.section-03-title p{
+    font-size-adjust: 21px;
+}
+.content-wide{
+    width: 1280px;
+    margin: 0 auto;
+}
+.content-area{
+    display: flex;
+}
+.content-03-img{
+    width: 50%;
+    text-align: center;
+}
+.content-03-area{
+    width: 50%;
+    color: #666;
+    font-family: 'Binggrae';
+    padding: 39px 0;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    line-height: 30px;
+}
+.area-icon{
+    display: flex;
+    /* justify-content: space-between; */
+    /* 양쪽정렬 */
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #666;
+}
+.area-icon div{
+    margin: 20px 30px;
+    text-align: center;
+}
+.icon-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+.icon-p{
+    font-family: 'Binggrae-bold';
+}
+/* section 03 end */
+/* section 04 start */
+#section04{
+    background: #ffec48;
+    width: 100%;
+    height: auto;
+    padding-bottom: 15%;
+}
+
+.sec04-event{
+    display: flex;
+}
+
+.event-img{
+    position: relative;
+}
+.event-img img{
+    position: absolute;
+    z-index: 88;
+    left: 20%;
+}
+.event-img h1{
+    font-family: 'Binggrae-Bold';
+    position: absolute;
+    font-size: 250px;
+    left: 5%;
+    top: 20%;
+}
+.sec04-event div{
+    width: 50%;
+    font-family: 'Binggrae';
+}
+.sec04-wrap{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.sec04-title{
+    padding:40px 0;
+    font-size: 25px;
+    text-align: center;
+}
+.event-title{
+    padding-top: 30px;
+    border-top: 1px solid #666;
+}
+.event-title .item_tit{
+    font-size: 25px;
+}
+.item_des{
+    padding-top: 25px;
+    line-height: 32px;
+    color: #666;
+}
+.event-pop {
+    padding: 5% 0;
+    width: 100% !important;
+}
+.event-pop p{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.event-pop input {
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+.event-pop button {
+    width: 20%;
+    height: 53px;
+    border: none;
+    background: #0d7445;
+    color: #ffe259;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 18px;
+    margin-left: -5px;
+}
+/* section 04 end */
+
+
+
+#section05{
+    background: aquamarine;
+    width: 100%;
+    height: 100%;
+}
+
+
 @media(max-width:767px){
     .navi>ul{
         display: none;
@@ -208,116 +397,49 @@ a{
     .content-03-area{
         margin-top: 50px;
         width: 100%;
+        text-align: center;
     }
-
     #section03{
         height: auto;
         padding-bottom: 80px;
     }
-    
     .area-icon{
         justify-content: center;
         align-items: center;
     }
 
-}
-
-/* section02 start */
-
-#section02{
-    background: #ff4b4b;
-    width: 100%;
-    height: 100%;
-}
-
-.content-title{
-    text-align: center;
-    padding-top: 80px;
-}
-.content-title p{
-    font-family: 'Binggrae';
-    font-size: 32px;
-    color: #fff;
-}
-.content-title h1{
-    font-family: 'Binggrae-Bold';
-    font-size: 45px;
-    color: #fff;
-}
-.contient-video1{
-    width: 25%;
-    height: 250px;
-}
-.content-video{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 80px;
-}
-
-
-/* section02 end */
-
-#section03{
-    background: #f4f4f4;
-    width: 100%;
-    height: 100%;
-}
-.section-03-title{
-    text-align: center;
-    padding: 80px 0;
-    font-family: 'Binggrae-bold';
-}
-.section-03-title h1{
-    font-size-adjust: 21px;
-}
-.section-03-title p{
-    font-size-adjust: 21px;
-}
-.content-wide{
-    width: 1280px;
-    margin: 0 auto;
-}
-.content-area{
-    display: flex;
-}
-.content-03-img{
-    width: 50%;
-    text-align: center;
-}
-.content-03-area{
-    width: 50%;
-    color: #666;
-    font-family: 'Binggrae';
-    padding: 39px 0;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
-    line-height: 30px;
-}
-.area-icon{
-    display: flex;
-    /* justify-content: space-between; */
-    /* 양쪽정렬 */
-    padding-top: 20px;
-    margin-top: 30px;
-    border-top: 1px solid #666;
-}
-.area-icon div{
-    margin: 20px 30px;
-    text-align: center;
-}
-.icon-title{
-    font-weight: bold;
-    font-size: 24px;
-}
-/* section 03 end */
-#section04{
-    background: #ffec48;
-    width: 100%;
-    height: 100%;
-}
-
-#section05{
-    background: aquamarine;
-    width: 100%;
-    height: 100%;
+    /* section04 시작 모바일 */
+    .sec04-event{
+        flex-wrap: wrap;
+    }
+    .sec04-event div{
+        width: 100%;
+    }
+    .sec04-wrap{
+        width: 100%;
+    }
+    .event-img{
+        height: 550px;
+    }
+    .event-img h1{
+        font-size: 170px;
+        left: 10%;
+    }
+    .event-img img{
+        width: 70%;
+    }
+    .event-pop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .event-pop button{
+        width: 50%;
+        border-radius: 5px;
+    }
+    .event-title{
+        text-align: center;
+    }
 }
