@@ -1,0 +1,123 @@
+.admin-nav li a{
+    padding: 0;
+    }
+    
+    .navbar-brand img{
+        width: 75%;
+    }
+    .admin-nav{
+        padding-top: 20px;
+    }
+    .admin-nav li{
+        border-right: 1px solid #ddd;
+        margin-top: 5px;
+        padding: 0 8px;
+    }
+    .admin-nav li:last-child{
+        border: none;
+    }
+    .admin-login li{
+        padding: 0;
+        padding-top: 15px;
+    }
+    
+    .padding-0{
+        padding: 0;
+    }
+    .padding-0>div{
+        padding: 0;
+    }
+    
+    .form{
+        display: flex;
+    }
+    .admin-title{
+        width: 20%;
+        background: #272727;
+        color:#fff;
+        display: flex;
+        align-items: center;
+    }
+    .admin-form{
+        width: 80%;
+        background: #f4f4f4;
+        padding: 1% 0;
+        height: 40px;
+    }
+    .form-radio{
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    .form-control{
+        width:95% !important;
+        margin: 0 auto;
+    }
+    
+    input[type=date]{
+        width: 36.5% !important;
+    }
+    .date{
+        display: flex;
+    }
+    .date .form-control{
+        display: inline !important;
+    }
+    .date span{
+        padding: 7px 10px;
+    }
+    .form-file{
+        display: flex;
+    }
+    input[type=file]{
+        width: 50%;
+    }
+    .form-content-title{
+        width: 10% !important;
+        padding-top: 30px;
+    }
+    .form-area{
+        width: 90%;
+        background: #f4f4f4;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .form-area textarea{
+        width: 97%;
+        height: 250px;
+        display: flex;
+        margin:0 auto;
+    }
+
+    .content-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content-button button{
+        margin: 20px 10px;
+    }
+    
+    /* background: #f4f4f4; */
+    
+    @media(max-width:767px){
+        .admin-nav li a{
+            padding: 10px;
+            }
+        .admin-nav li{
+            border: none;
+        }
+        nav{
+            padding-bottom: 10px;
+        }
+        .form-content-title{
+            width: 22.5% !important;
+        }
+        .form-area textarea{
+            width: 80% !important;
+        }
+        
+    }
+    
+    
+    /* .admin-nav li:last-child{
+        border: none;
+    } */

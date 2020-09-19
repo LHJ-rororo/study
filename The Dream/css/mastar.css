@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+nav{
+    height: 100px;
+    background: #090a2a;
+}
+
+.navi li a{
+    text-decoration: uppercase;
+    color: #fff;
+}

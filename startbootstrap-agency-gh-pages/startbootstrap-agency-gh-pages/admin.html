@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더드림앤컴퍼니</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    </button>
+                    <!-- 고스트버튼   -->
+                    <a href="#" class="navbar-brand">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- 로고  -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav admin-nav">
+                        <li><a href="#">내정보보기</a></li>
+                        <li><a href="#">게시판</a></li>
+                        <li><a href="#">계약정보관리</a></li>
+                        <li><a href="#">내 성과조회</a></li>
+                        <li><a href="#">업무관리</a></li>
+                        <li><a href="#">성과조회(관리자)</a></li>
+                        <li><a href="#">시스템관리</a></li>
+                        <li><a href="#">사용자관리</a></li>
+                        <li><a href="#">자금관리</a></li>
+                    </ul>
+                    <ul class="nav navbar navbar-right admin-login">
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav  -->
+    </header> 
+    <!-- header  -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 padding-0">
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>제목*</label>
+                    </div>
+                    <div class="admin-form">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <!-- 제목 -->
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>비밀번호</label>
+                    </div>
+                    <div class="admin-form">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <!-- 패스워드 -->
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>게시기간</label>
+                    </div>
+                    <div class="admin-form date">
+                        <input type="date" class="form-control">
+                        <span>~</span>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <!-- 게시기간  -->
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>카테고리*</label>
+                    </div>
+                    <div class="admin-form">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>사용여부</label>
+                    </div>
+                    <div class="admin-form form-radio">
+                        <input type="radio" name="optradio" checked>사용
+                        <input type="radio" name="optradio">미사용
+                    </div>
+                </div>
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>사용여부</label>
+                    </div>
+                    <div class="admin-form form-file">
+                        <input type="file">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 padding-0">
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>블라인드처리</label>
+                    </div>
+                    <div class="admin-form form-radio">
+                        <input type="radio" name="select" checked>사용
+                        <input type="radio" name="select">미사용
+                    </div>
+                </div>
+                <!-- 제목 -->
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>공개여부</label>
+                    </div>
+                    <div class="admin-form form-radio">
+                        <input type="radio" name="open" checked>공개
+                        <input type="radio" name="open">비공개
+                    </div>
+                </div>
+                <!-- 패스워드 -->
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>타입코드</label>
+                    </div>
+                    <div class="admin-form date">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <!-- 게시기간  -->
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>게시물 뷰 등급*</label>
+                    </div>
+                    <div class="admin-form">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label>삭제요청</label>
+                    </div>
+                    <div class="admin-form form-radio">
+                        <input type="radio" name="delete" checked>삭제요청중
+                        <input type="radio" name="delete">삭제미요청
+                    </div>
+                </div>
+                <div class="col-sm-12 form">
+                    <div class="admin-title">
+                        <label></label>
+                    </div>
+                    <div class="admin-form form-file">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row  -->
+        <div class="row area-box">
+            <div class="col-md-12 form text-area padding-0">
+                <div class="admin-title form-content-title">
+                    <label>삭제요청</label>
+                </div>
+                <div class="form-area">
+                    <textarea></textarea>
+                </div>
+
+            </div>
+        </div>
+                <div class="row">
+            <div class="content-button">
+                <button class="btn">button01</button>
+                <button class="btn btn-primary">button02</button>
+                <button class="btn btn-success">button03</button>
+                <button class="btn btn-danger">button04</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
