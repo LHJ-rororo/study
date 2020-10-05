@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 마조리 </title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .grid{
+        width: 500px;
+        max-width: 100%;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .griditem{
+        width: 200px;
+        height: 300px;
+        border: 1px solid #222;
+        margin-bottom:40px;
+        background: url(images/img\ \(4\).jpg);
+        background-size: cover;
+    }
+    .griditem.gt2{
+        height: 200px;
+    }
+    .griditem.gt3{
+        height: 150px;
+    }
+    .griditem.gt4{
+        height: 200px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="grid">
+    <div class="griditem">1</div>
+    <div class="griditem gt2">2</div>
+    <div class="griditem gt3">3</div>
+    <div class="griditem gt4">4</div>
+</div>
+<script src="js/masonry.pkgd.min.js">
+</script>
+<script>
+    $(function(){
+        $('.grid').masonry({
+            itemSelector: '.griditem',
+            colimnWidth: 200,
+            //가로크기 고정
+            gutter: 10,
+            horizontalOrder: true,
+            //originLeft : false // 왼쪽부터 정렬
+            //originTop: false //바닥부터
+            //transitionDuration: '0.2s' //위치 전환 시간
+        })
+    })
+</script>
+</body>
+</html>
