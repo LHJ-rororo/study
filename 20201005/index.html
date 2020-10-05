@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업 ! 팝업 !</title>
+</head>
+<body>
+    <button onclick="openWin()">open 'my window'</button>
+
+    <!-- window.open('경로','팝업이름','옵션'); -->
+    <script>
+        window.open('settimeout2.html','pop01','top=10, left=10, width=500, height=600, status=no, ,menubar=no, toolbar=no, resizable=no');
+
+        function openWin(){
+            var myWindow = window.open("", "myWindow", "width=200, height=200");
+            myWindow.document.write("<P>this is mywindow</P>");
+            setTimeout(function(){myWindow.close()},3000);
+        }
+        //3초 후에 닫히는 팝업창
+        
+//toolbar = 상단 도구창 출력여부
+//menubar = 상단 메뉴 출력 여부
+//location = 메뉴 아이콘 출력 여부
+//directories = 제목 표시줄 출력 여부
+//status = 하단의 상태바 출력 여부
+//scrollbars = 스크롤바 사용여부
+//resizable = 팝업창의 사이즈 변경 가능 여부
+//fullscreen =  전체화면으로 할지 선택여부
+//channelmode = f11 키 기능이랑 같음
+
+
+
+
+    </script>
+
+
+</body>
+</html>

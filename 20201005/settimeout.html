@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeout</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="timedText()">display timed text</button>
+    <input type="text" id="txt">
+
+<script>
+    function myFunction(){
+        setTimeout(function(){
+            alert('hello');
+        },3000);
+    }
+//버튼 클릭 시 3초 후 hello 모달창 띄움
+    function timedText(){
+        var x = document.getElementById("txt");
+        setTimeout(function(){x.value="2 seconds"},2000);
+        setTimeout(function(){x.value="4 seconds"},4000);
+        setTimeout(function(){x.value="6 seconds"},6000);
+    }
+    // 버튼 클릭 시 초가 지날때마다 입력창에 x.value에 써진 숫자를 대입해서 보여줌
+</script>
+</body>
+</html>

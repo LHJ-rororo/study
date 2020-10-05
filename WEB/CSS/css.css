@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #222328;
+}
+
+a{
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+/* reset css */
+
+.box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header*/
+.header {
+    width: 1200px;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.logo>a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 30px auto;
+}
+
+/* navi box */
+.navi_box {
+    float: right;
+    width: 600px;
+    height: 50px;
+    margin: 25px;
+}
+.navi_box>ul {
+    display: inline;
+    font-size: 0;
+}
+.navi_box>ul>li {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+.navi_box>ul>li>a {
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background: khaki;
+}
+.navi_box>ul>li>a:hover {
+    color: #940d0d;
+}
+
+/* menu_box */
+.menu_box {
+    position: absolute;
+    width: 600px;
+    height: 220px;
+    background: rgba(255,255,255,0.9) !important;
+    display: none;
+    z-index: 1;
+}
+.menu_box>ul {
+    display: inline;
+    width: 600px;
+    font-size: 0;
+}
+.menu_box>ul>li {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px 0;
+}
+.menu_box>ul>li:hover {
+    background: white;
+}
+.menu_box>ul>li>p>a {
+    display: block;
+    width: 150px;
+    height: 20px;
+    padding: 10px 0;
+    font-size: 12pt;
+}
+.menu_box>ul>li>p>a:link, a:visited {
+    text-decoration: none;
+    color: dimgray;
+}
+.menu_box>ul>li>p>a:hover {
+    background:#940d0d;
+    color: white;
+    font-weight: bold;
+}
+
+/* 슬라이드 */
+
+#slide_wrap{
+    clear: both;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide_box{
+    overflow: hidden;
+}
+.slide_box>ul>li>a>img{
+    display: block;
+    border: 0;
+    width: 1200px;
+    height: 300px;
+    transition: 1s;
+}
