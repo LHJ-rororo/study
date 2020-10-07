@@ -23,3 +23,19 @@ $(function(){
         }, "500");
     });
 });
+
+$(function(){
+    $('#popup_button').on('click', function(){
+        $('.popup').fadeIn();
+    });
+    $('.팝업닫기').on('click',function(){
+        $('.popup').fadeOut();
+    });
+});
+$(function(){
+    $(".tab_menu > li> a").click(function(){
+        $(this)
+            .parent().attr('class',"notice").siblings().attr('class', "gallery");
+            return false;
+    });
+});
