@@ -20,3 +20,18 @@ $(function(){
         }, "700");
     });
 });
+
+$(function(){
+    $('#popup_button').on('click', function(){
+        $('.popup').fadeIn();
+    });
+    $('.팝업닫기').on('click',function(){
+        $('.popup').fadeOut();
+    });
+});
+
+$('.family_list_box').hover(function(){
+    $(".family_list_box ul").stop().slideDown();
+},function(){
+    $(".family_list_box ul").stop().slideUp();
+});
