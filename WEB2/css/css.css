@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #222328;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+/* reset css */
+.box{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header*/
+header{
+    width: 1200px;
+    height: 100px;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.logo> a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 30px auto;
+}
+
+/* logo end */
+/* navi box */
+.navibox{
+    float: right;
+    width: 600px;
+    height: 50px;
+    margin: 25px;
+}
+.navibox > ul{
+    display: inline;
+    font-size: 0;
+}
+.navibox > ul > li {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+.navibox>ul>li>a{
+    display: block;
+    line-height: 50px;
+    font-weight: bold;
+    color: black;
+    background:rgb(183, 216, 126);
+}
+.navibox>ul>li>a:hover{
+    color: white;
+    background: rgb(216, 131, 145);
+}
+/* */
+/* menu_box */
+.menu_box{
+    /*서브메뉴 크기와 배경색,display:none 에 대한 설정 */
+    position: absolute;
+    width: 600px;/* navimenu랑 같은 width 값 */
+    height: 220px;
+    background: rgba(255,255,255,0.9) !important;
+    display: none; 
+    /* 호버 전에는 보이지말아야하므로 */
+    z-index: 1;
+}
+.menu_box > ul{
+    display: inline;
+    width: 600px;
+    font-size: 0;
+}
+
+.menu_box>ul>li {
+    /*서브메뉴 사이 간격과 각각의 크기,텍스트얼라인,패딩에 대한 설정*/
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px 0;
+}
+.menu_box>ul>li:hover {
+    background: white;
+}
+
+.menu_box>ul>li>p>a {
+    /* 디스플레이 블록으로 속성값 부여할 수 있게 한 후 width와 height로 크기를 설정, 후에 패딩을 준 후 폰트사이즈를 설정한다*/
+    display: block;
+    width: 150px;
+    height: 20px;
+    padding: 10px 0;
+    font-size: 12pt;
+}
+
+.menu_box>ul>li>p>a:hover {
+    /* 서브메뉴 호버 시 효과*/
+    background:#940d0d;
+    color: white;
+    font-weight: bold;
+}
+
+/* */
