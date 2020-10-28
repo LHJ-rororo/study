@@ -1,0 +1,21 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "SoulwavePersonalUse";
+  src: url("../fonts/Soulwave-PersonalUse.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Soulwave-PersonalUse.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Soulwave-PersonalUse.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Soulwave-PersonalUse.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Soulwave-PersonalUse.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Soulwave-PersonalUse.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.font {
+  font-family: 'SoulwavePersonalUse';
+  font-size: 24px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 10px;
+}
